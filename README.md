@@ -102,10 +102,10 @@ Coming Soon
 ## 👤 Author
 
 **Riyaz Patel**  
-
-Software Developer 
-
-📧 riyazpatel185@gmail.com
+Frontend Developer  
+📧 riyazpatel185@gmail.com  
+🔗 https://github.com/Rp7677
+💼 Open to opportunities
 
 ## ⭐ Note
 
