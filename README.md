@@ -1,5 +1,4 @@
 # 🏫 School ERP Management System
-🚀 Production-level School ERP system with real-world workflows and role-based architecture
 
 ![React](https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Redux](https://img.shields.io/badge/Redux_Toolkit-593D88?style=for-the-badge&logo=redux&logoColor=white)
@@ -7,7 +6,7 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
 A web-based ERP system for managing student admissions, campus setup, role-based access, student records, and document workflows.
-
+🚀 Production-level School ERP system with role-based architecture and real-world workflows
 ---
 
 ## 📌 Overview
