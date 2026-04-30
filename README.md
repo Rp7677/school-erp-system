@@ -6,6 +6,7 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
 A web-based ERP system for managing student admissions, campus setup, role-based access, student records, and document workflows.
+
 🚀 Production-level School ERP system with role-based architecture and real-world workflows
 ---
 
