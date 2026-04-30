@@ -37,7 +37,7 @@ It helps manage:
 ## 🛠 Tech Stack
 
 | Area | Technology |
-|------|----------|
+|------|------------|
 | Frontend | React.js |
 | State Management | Redux Toolkit |
 | API Handling | Axios |
@@ -102,7 +102,9 @@ Coming Soon
 ## 👤 Author
 
 **Riyaz Patel**  
-Frontend Developer  
+
+Software Developer 
+
 📧 riyazpatel185@gmail.com
 
 ## ⭐ Note
