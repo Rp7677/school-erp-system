@@ -1,4 +1,5 @@
 # 🏫 School ERP Management System
+🚀 Production-level School ERP system with real-world workflows and role-based architecture
 
 ![React](https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Redux](https://img.shields.io/badge/Redux_Toolkit-593D88?style=for-the-badge&logo=redux&logoColor=white)
@@ -93,6 +94,10 @@ Frontend Developer
 - Debugging real-world issues
   
 ---
+
+## 💡 Impact
+
+Designed to replace manual processes and improve efficiency in multi-campus educational institutions.
 
 ## 🌐 Live Demo
 Coming Soon
