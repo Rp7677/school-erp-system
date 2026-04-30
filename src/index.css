@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+/* @theme {
+  Your Global Brand Color - mapped to var(--color-primary)
+  --color-primary: #FBCB84;
+  --color-primary: #3852B4;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-heading: 1.875rem; /* text-3xl */
+  --button-text: 15px;
+  --color-primary: #FBCB84;
+  --text-small-table: 0.75rem; /* same as text-xs */ 
+  --text-heding-table: 10px; 
+  --text-title-table: 15px; 
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --text-heading: var(--font-heading);
+  --text-button: var(--button-text);
+  --text-small-table: var(--text-small-table);
+  --text-heding-table: var(--text-heding-table);
+  --text-title-table: var(--text-title-table);
+}
+
+/* Force smooth UI transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* custom scrollbar for dropdowns if needed */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full;
+}
+
+/* ---------------------------------------------------------
+   PREMIUM SCROLLBAR DESIGN
+   --------------------------------------------------------- */
+
+/* 1. Scrollbar Container (Width & Height) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* 2. The Track (Background) 
+   We keep it transparent so it doesn't create "stripes" 
+   on your clean dashboard background. */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* 3. The Thumb (Handle) - Light Mode */
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1; /* gray-300 */
+  border-radius: 100vh;
+  /* Creating the "Floating" effect using transparent borders */
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  transition: background-color 0.2s ease;
+}
+
+/* 4. The Thumb - Dark Mode Overrides 
+   Applies when your React state adds 'dark' class to <html> or <body> */
+.dark ::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 3px solid transparent; /* Keeps it floating against dark bg */
+}
+
+/* 5. Hover State - Uses your Primary Gold (#FBCB84) */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary); /* Subtle glow in dark mode */
+}
+
+/* 6. Firefox Support (Standardized Properties) */
+@supports (scrollbar-width: thin) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+  
+  .dark * {
+    scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+  }
+}
+
+/* ---------------------------------------------------------
+   GLOBAL BODY STYLES
+   --------------------------------------------------------- */
+
+body {
+  @apply transition-colors duration-300 antialiased;
+  /* Ensure smooth transitions when toggling isDark */
+}
+
+/* Match the background of your dashboard */
+body.dark {
+  background-color: #121212; 
+  color: #f8fafc;
+}
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
